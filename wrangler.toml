@@ -1,11 +1,22 @@
-name = "siren"
+name = "land"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
+workers_dev = true
+
+routes = [
+  { pattern = "land.xcpvip.dpdns.org", custom_domain = true },
+  { pattern = "ava.game.naver.com.land.xcpvip.dpdns.org", custom_domain = true },
+  { pattern = "cache.netflix.com.land.xcpvip.dpdns.org", custom_domain = true },
+  { pattern = "graph.instagram.com.land.xcpvip.dpdns.org", custom_domain = true },
+  { pattern = "info.microsoft.com.land.xcpvip.dpdns.org", custom_domain = true },
+  { pattern = "support.zoom.us.land.xcpvip.dpdns.org", custom_domain = true },  
+  { pattern = "quiz.int.vidio.com.land.xcpvip.dpdns.org", custom_domain = true },
+]
 
 [[kv_namespaces]]
 binding = "SIREN"
-id = "216a79ea5462492da7aa737cc8d7a2af"
+id = "8c95934617a345f58a8355cab3f8c208"
 
 [build]
 command = "cargo install worker-build && worker-build --release"
@@ -14,6 +25,6 @@ command = "cargo install worker-build && worker-build --release"
 build = { command = "cargo install worker-build && worker-build --dev" }
 
 [vars]
-UUID = "f282b878-8711-45a1-8c69-5564172123c1"
-MAIN_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/index.html"
-SUB_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/sub.html"
+UUID = "7265646d-6933-4300-9abc-41e2edba3777"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/Koelpin47/Siren/refs/heads/master/web/index.html"
+SUB_PAGE_URL = "https://raw.githubusercontent.com/Koelpin47/Siren/refs/heads/master/web/sub.html"
